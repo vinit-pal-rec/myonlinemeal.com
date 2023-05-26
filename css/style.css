@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    align-content: baseline;
+    position: relative;
+}
+
+/* nav logo and img */
+
+#logo {
+    margin: -15px -20px;
+
+}
+
+#logo img {
+    height: 110px;
+    width: 150px;
+}
+
+/* navigation listing  */
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin: 10px;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: orangered;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    padding: 48px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('..//img/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/*services section  */
+#services {
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+#services .box {
+    border: 2px solid orangered;
+    padding: 10px 10px;
+    margin: 15px;
+    border-radius: 23px;
+    background-color: rgb(253, 242, 242);
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 150px;
+
+}
+
+/* client section */
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(..//img/bg3.jpg);
+    height: 180px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#client-section .class-item img {
+    display: block;
+    margin: auto;
+    padding: 28px 30px;
+    width: 90px;
+    height: 50px;
+}
+/* contact section */
+#contact{
+    position: relative;
+    margin-top: 9px;
+
+}
+#contact::before{
+content: "";
+position: absolute;
+background: url(..//img/bg4.jpg) no-repeat center center/cover;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.6;}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+/* utility class */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 10px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+    padding: 12px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.btn {
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    padding: 5px 20px;
+    border: 2px solid grey;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    margin: 20px 0px;
+    padding: 5px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    color: orangered;
+    border-radius: 20px;
+}
+/* footer */
+footer{
+    color: white;
+    background-color: black;
+    padding: 3px 10px;
+
+}
